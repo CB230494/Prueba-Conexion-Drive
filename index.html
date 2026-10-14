@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de conexión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="contenedor">
+    <h1>Registro de funcionarios</h1>
+
+    <p class="descripcion">
+        Prueba de conexión entre GitHub Pages y Google Sheets.
+    </p>
+
+    <form id="formulario">
+        <label for="nombre">Nombre de la persona</label>
+        <input type="text" id="nombre" required>
+
+        <label for="cedula">Número de cédula</label>
+        <input type="text" id="cedula" required>
+
+        <label for="delegacion">Delegación donde trabaja</label>
+        <input type="text" id="delegacion" required>
+
+        <button type="submit">Guardar registro</button>
+    </form>
+
+    <div id="mensaje"></div>
+
+    <hr>
+
+    <h2>Personas registradas</h2>
+
+    <button id="btnActualizar" type="button">
+        Actualizar datos
+    </button>
+
+    <div class="tabla-contenedor">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cédula</th>
+                    <th>Delegación</th>
+                </tr>
+            </thead>
+            <tbody id="tablaDatos"></tbody>
+        </table>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
